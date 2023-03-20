@@ -3,46 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titania - Terraforming Mars Score Tracker</title>
+    <title>Titania</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Titania - Terraforming Mars Score Tracker</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Input Scores</h2>
-            <div id="player-inputs-container">
-                <!-- Player input fields will be generated here -->
-            </div>
-            <button id="add-player">Add Player</button>
-            <button id="calculate-scores">Calculate Scores</button>
-            <button id="save-results">Save Results</button>
-        </section>
-        <section>
-            <h2>Results</h2>
-            <div id="results-container">
-                <!-- Results will be displayed here -->
-            </div>
-        </section>
-        <section>
-            <h2>Top Ten High Scores</h2>
-            <div id="high-scores-container">
-                <!-- High scores will be displayed here -->
-            </div>
-        </section>
-        <section>
-            <h2>Top Five Highest Scoring Games</h2>
-            <div id="highest-scoring-games-container">
-                <!-- Highest scoring games will be displayed here -->
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Titania. All rights reserved.</p>
-    </footer>
-    
+    <div class="container">
+        <h1 class="title">Titania</h1>
+        <h2 class="subtitle">Terraforming Mars Score Calculator</h2>
+
+        <div id="player-inputs-container" class="inputs-container"></div>
+        <button id="add-player" class="btn">Add Player</button>
+        <button id="calculate-scores" class="btn">Calculate Scores</button>
+        <button id="save-results" class="btn">Save Results</button>
+
+        <h2 class="subtitle">Results</h2>
+        <div id="results-container" class="results-container"></div>
+
+        <h2 class="subtitle">Top Ten High Scores</h2>
+        <div id="high-scores-container" class="results-container"></div>
+
+        <h2 class="subtitle">Top Five Highest Scoring Games</h2>
+        <div id="highest-scoring-games-container" class="results-container"></div>
+    </div>
     <script src="scripts.js"></script>
 </body>
 </html>
