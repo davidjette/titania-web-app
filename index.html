@@ -3,24 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titania</title>
+    <title>Titania - Terraforming Mars Score Tracker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Titania</h1>
+        <h1>Welcome to Titania - Terraforming Mars Score Tracker</h1>
     </header>
     <main>
         <section>
-            <h2>About</h2>
-            <p>This is a basic responsive web app built with HTML, CSS, and JavaScript.</p>
+            <h2>Input Scores</h2>
+            <div id="player-inputs-container">
+                <!-- Player input fields will be generated here -->
+            </div>
+            <button id="add-player">Add Player</button>
+            <button id="calculate-scores">Calculate Scores</button>
+            <button id="save-results">Save Results</button>
         </section>
-        <!-- Add this within the main content area -->
-<button id="example-button">Click me!</button>
-<p id="example-paragraph">You haven't clicked the button yet.</p>
+        <section>
+            <h2>Results</h2>
+            <div id="results-container">
+                <!-- Results will be displayed here -->
+            </div>
+        </section>
+        <section>
+            <h2>Top Ten High Scores</h2>
+            <div id="high-scores-container">
+                <!-- High scores will be displayed here -->
+            </div>
+        </section>
+        <section>
+            <h2>Top Five Highest Scoring Games</h2>
+            <div id="highest-scoring-games-container">
+                <!-- Highest scoring games will be displayed here -->
+            </div>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2023 TITANIA 00.01. All rights reserved.</p>
+        <p>&copy; 2023 Titania. All rights reserved.</p>
     </footer>
     
     <script src="scripts.js"></script>
